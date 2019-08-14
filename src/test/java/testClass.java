@@ -1,3 +1,6 @@
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class testClass {
 
     public static String reversed(String str){
@@ -7,7 +10,10 @@ public class testClass {
         }
         return reversed;
     }
-    public static void main(String[] args) {
-        System.out.println(reversed("mY name is"));
+
+    @Test
+    public void testHelloWorld(){
+        System.out.println(reversed("Kanybek"));
+//        Assertions.assertEquals("kanybek", "Kanybek");
     }
 }
